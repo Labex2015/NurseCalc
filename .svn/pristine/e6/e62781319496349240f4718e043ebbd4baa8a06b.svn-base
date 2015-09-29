@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.nursecalc.Util.DashboardLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:src="@drawable/gotejamento"
+                android:background="#fff"
+                android:onClick="calcularGotejamento"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Gotejamento"
+                android:paddingTop="40dp"
+                android:textAppearance="@android:style/TextAppearance.Large"
+                android:layout_height="wrap_content" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:src="@drawable/dosagem"
+                android:background="#fff"
+                android:onClick="calcularDosagem"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Dosagem"
+                android:paddingTop="40dp"
+                android:textAppearance="@android:style/TextAppearance.Large"
+                android:layout_height="wrap_content" />
+
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:src="@drawable/escala"
+                android:background="#fff"
+                android:onClick="showEscalas"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Escala"
+                android:paddingTop="40dp"
+                android:textAppearance="@android:style/TextAppearance.Large"
+                android:layout_height="wrap_content" />
+
+
+
+
+</com.nursecalc.Util.DashboardLayout><!-- From: file:/C:/Users/0126128/Desktop/Labex%202015/NurseCalc/app/src/main/res/layout/principal.xml -->

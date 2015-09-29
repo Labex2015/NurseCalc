@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/scalemore"
+        android:id="@+id/imageView" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="Escala"
+        android:id="@+id/escalaLabel"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+        android:layout_height="wrap_content" />
+</LinearLayout>
+<!-- From: file:/C:/Users/0126128/Desktop/Labex%202015/NurseCalc/app/src/main/res/layout/linha_escala_list.xml -->

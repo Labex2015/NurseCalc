@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">NurseCalc</string>
+
+
+    <string name="title_activity_panel">NurseCalc</string>
+    <string name="title_section0">Principal</string>
+    <string name="title_section1">Escalas</string>
+    <string name="title_section2">Sobre o NurseCalc</string>
+    <string name="title_activity_creditos">Créditos</string>
+    <string name="title_activity_escalas">Escalas</string>
+    <string name="title_activity_calcular_gotejamento">Calcular Gotejamento</string>
+    <string name="title_activity_calcular_dosagem">Calcular Dosagem</string>
+    <string name="title_activity_le_xml">LeXml</string>
+    <string name="title_activity_escala">Escalas</string>
+
+    <string name="credits">Creditos</string>
+
+    <string name="radio_button_gotejamento">Gotejamento</string>
+    <string name="radio_button_horas">Horas</string>
+    <string name="button_calcular_gotejamento">Calcular Gotejamento</string>
+    <string name="button_calcular_tempo">Calcular Tempo</string>
+
+    <string name="definir_medida">Definir Medida</string>
+    <string name="label_gotejamento_radio_group">Selecione:</string>
+
+    <string name="gotejamento_m_text_view">Gotas/Min</string>
+    <string name="gotejamento_h_text_view">Gotas/Hora</string>
+    <string name="min_text_view">Tempo(min)</string>
+    <string name="horas_text_view">Tempo(horas)</string>
+
+
+    <string name="required_fields">Todos os campos devem ser preenchidos</string>
+    <string name="result">Resultado:</string>
+    <string name="drops">microgotas/min</string>
+
+    <string name="action_settings">Settings</string>
+
+
+
+    <string name="credits_app">NurseCalc</string>
+    <string name="credits_idealizador">Idealizador:</string>
+    <string name="credits_app_idealizador_name">Me. Enf° Christian Negeliskii</string>
+    <string name="credits_app_lab">Labex Feevale/HP</string>
+    <string name="credits_app_prof_coord">Coordenadores:</string>
+    <string name="credits_app_prof_coord_1">Prof. Me. Eduardo Pretz</string>
+    <string name="credits_app_prof_coord_2">Prof. Dr. Guillermo Nudelman Hess</string>
+    <string name="credits_app_description">Projeto realizado em parceria com o Laboratório Experimental de Engenharia de Software, LabEX, e o curso de enfermagem.</string>
+
+
+
+
+
+</resources>

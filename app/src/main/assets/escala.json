@@ -1,0 +1,1940 @@
+[  
+   {  
+      "id":1,
+      "nome":"Escala de Morse",
+      "tipo":"N",
+      "descricao":"Escala de Morse",
+      "perguntas":[  
+         {  
+            "id":1,
+            "pergunta":"Histórico de quedas",
+            "descricao":"",
+            "opcoes":[  
+               {  
+                  "id":1,
+                  "titulo":"Não: Se o paciente não tem história de quedas nos últimos três meses.",
+                  "peso":0
+               },
+               {  
+                  "id":2,
+                  "titulo":"Sim: Se o paciente caiu durante o período da internação hospitalar ou se tem histórico recente (até três meses) de quedas por causas fisiológicas, tais como convulsões ou marcha comprometida antes da admissão hospitalar.",
+                  "peso":25
+               }
+            ]
+         },
+         {  
+            "id":2,
+            "pergunta":"Diagnóstico secundário",
+            "descricao":"",
+            "opcoes":[  
+               {  
+                  "id":1,
+                  "titulo":"Não: Se no prontuário do paciente apresentar apenas um diagnóstico médico.",
+                  "peso":0
+               },
+               {  
+                  "id":2,
+                  "titulo":"Sim: Se no prontuário do paciente apresentar mais de um diagnóstico médico.",
+                  "peso":15
+               }
+            ]
+         },
+         {  
+            "id":3,
+            "pergunta":"Auxílio na deambulação",
+            "descricao":"",
+            "opcoes":[  
+               {  
+                  "id":1,
+                  "titulo":"Nenhum/Acamado/Auxiliado por Profissional da Saúde: Se o paciente deambula sem equipamento auxiliar (muleta, bengala ou andador), ou Se deambula com a ajuda de um membro da equipe de saúde, ou ainda Se usa cadeira de rodas ou se está acamado e não sai da cama sozinho.",
+                  "peso":0
+               },
+               {  
+                  "id":2,
+                  "titulo":"Muletas/Bengala/Andador: Se o paciente utiliza muletas, bengala ou andador.",
+                  "peso":15
+               },
+               {  
+                  "id":3,
+                  "titulo":"Mobiliário/Parede: Se o paciente se movimenta apoiando-se no mobiliário/paredes.",
+                  "peso":15
+               }
+            ]
+         },
+         {  
+            "id":4,
+            "pergunta":"Terapia Endovenosa/dispositivo endovenoso salinizado ou heparinizado",
+            "descricao":"",
+            "opcoes":[  
+               {  
+                  "id":1,
+                  "titulo":"Não: Se o paciente não usa dispositivo endovenoso. Nota: quando o paciente usa dispositivo totalmente implantado, considera-se pontuação zero, quando não estiver em uso.",
+                  "peso":0
+               },
+               {  
+                  "id":2,
+                  "titulo":"Sim: Se o paciente usa dispositivo endovenoso com infusão contínua ou não (salinizado ou heparinizado).",
+                  "peso":20
+               }
+            ]
+         },
+         {  
+            "id":5,
+            "pergunta":"Marcha",
+            "descricao":"",
+            "opcoes":[  
+               {  
+                  "id":1,
+                  "titulo":"Normal/Sem deambulação, Acamado, Cadeira de Rodas: Uma marcha normal é caracterizada pelo andar de cabeça ereta, braços balançando livremente ao lado do corpo e passos largos, sem hesitação. Também recebe a mesma pontuação se o paciente está acamado e/ou usa cadeira de rodas (sem deambulação).",
+                  "peso":0
+               },
+               {  
+                  "id":2,
+                  "titulo":"Fraca: Os passos são curtos e podem ser vacilantes. Quando a marcha é fraca, embora o paciente incline-se para frente enquanto caminha, é capaz de levantar a cabeça sem perder o equilíbrio. Além disso, caso ele faça uso de algum mobiliário como apoio, este apoio se dá de maneira leve somente para se sentir seguro, não para se manter ereto.",
+                  "peso":0
+               },
+               {  
+                  "id":2,
+                  "titulo":"Comprometida: O paciente dá passos curtos e vacilantes e pode ter dificuldade de levantar da cadeira, necessidade de se apoiar nos braços da cadeira para levantar e/ou impulsionar o corpo (faz várias tentativas para se levantar impulsionando o corpo). Com esse tipo de marcha, a cabeça do paciente fica abaixada e ele olha para o chão. Devido à falta de equilíbrio, o paciente agarra-se ao mobiliário, a uma pessoa ou utiliza algum equipamento de auxilio à marcha (muletas, bengalas, andadores) para se segurar e não consegue caminhar sem essa ajuda. Quando ajuda estes pacientes a caminhar, o membro da equipe de saúde nota que o paciente realmente se apóia nele e que, quando o paciente se apóia em um corrimão ou mobília, ele o faz com força até que as articulações de seus dedos das mãos fiquem brancas.",
+                  "peso":20
+               }
+            ]
+         },
+         {  
+            "id":6,
+            "pergunta":"Estado Mental",
+            "descricao":"descrição",
+            "opcoes":[  
+               {  
+                  "id":1,
+                  "titulo":"Orientado/capaz quanto a sua capacidade/limitação: Ao perguntar ao paciente “Você é capaz de ir ao banheiro sozinho ou precisa de ajuda?” verifique se a resposta é consistente com as informações constantes no prontuário e/ou com sua avaliação. Em caso positivo, o paciente é classificado como capaz.",
+                  "peso":0
+               },
+               {  
+                  "id":2,
+                  "titulo":"Superestima capacidade/ Esquece limitações: Ao perguntar ao paciente “Você é capaz de ir ao banheiro sozinho ou precisa de ajuda?” verifique se a resposta não é consistente com as informações do prontuário e/ou com sua avaliação ou se a avaliação do paciente é irreal. Se isto acontecer, este paciente está superestimando suas habilidades e esquecendo suas limitações.",
+                  "peso":0
+               }
+            ]
+         }
+      ],
+      "analise":[  
+         {  
+            "id":1,
+            "valorMin":0,
+            "valorMax":24,
+            "analise":"Risco baixo"
+         },
+         {  
+            "id":2,
+            "valorMin":25,
+            "valorMax":44,
+            "analise":"Risco médio"
+         },
+         {  
+            "id":2,
+            "valorMin":45,
+            "valorMax":100,
+            "analise":"Risco alto"
+         }
+      ]
+   },
+   {  
+      "id":2,
+      "nome":"Richmond Agitation Sedation Scale RASS",
+      "tipo":"I",
+      "descricao":"Escala para avaliar o nível de sedação do paciente",
+      "perguntas":[  
+         {  
+            "id":1,
+            "pergunta":"Estado do paciente durante sedação",
+            "descricao":"Escala para averiguar estado do paciente durante sedação",
+            "opcoes":[  
+               {  
+                  "id":1,
+                  "titulo":"PDF",
+                  "peso":40
+               }
+            ]
+         }
+      ],
+      "analise":[  
+         {  
+            "id":1,
+            "valorMin":0,
+            "valorMax":24,
+            "analise":"Risco baixo"
+         },
+         {  
+            "id":2,
+            "valorMin":25,
+            "valorMax":44,
+            "analise":"Risco médio"
+         },
+         {  
+            "id":2,
+            "valorMin":45,
+            "valorMax":100,
+            "analise":"Risco alto"
+         }
+      ]
+   },
+   {  
+      "id":3,
+      "nome":"Escala de Braden Q",
+      "tipo":"N",
+      "descricao":"Escala para avaliar úlcera por pressão",
+      "perguntas":[  
+         {  
+            "id":1,
+            "pergunta":"Mobilidade",
+            "descricao":"Capacidade de mudar e controlar a posição do corpo.",
+            "opcoes":[  
+               {  
+                  "id":1,
+                  "titulo":"Pontos: 1 - Completamente imóvel: não faz mudanças, nem mesmo pequenas, na posição do corpo ou das extremidades, sem ajuda. ",
+                  "peso":1
+               },
+               {  
+                  "id":2,
+                  "titulo":"Pontos: 2 - Muito limitado: faz pequenas mudanças ocasionais na posição do corpo ou extremidades, mas é incapaz de fazer mudanças completamente sozinho.",
+                  "peso":2
+               },
+               {  
+                  "id":3,
+                  "titulo":"Pontos: 3 - Levemente limitado: faz mudanças freqüentes, embora pequenas, na posição do corpo ou das extremidades, sem ajuda.",
+                  "peso":3
+               },
+               {  
+                  "id":4,
+                  "titulo":"Pontos: 4 - Nenhuma limitação: faz mudanças importantes e freqüentes na posição do corpo, sem ajuda.",
+                  "peso":0
+               }
+            ]
+         },
+         {  
+            "id":2,
+            "pergunta":"Atividade",
+            "descricao":"Grau de atividade física.",
+            "opcoes":[  
+               {  
+                  "id":1,
+                  "titulo":"Pontos: 1 - Acamado: permanece no leito o tempo todo. ",
+                  "peso":1
+               },
+               {  
+                  "id":2,
+                  "titulo":"Pontos: 2 - Restrito à cadeira: a capacidade de deambular está gravemente limitada ou inexistente. Não consegue sustentar o próprio peso e/ou precisa de ajuda para sentar-se em uma cadeira ou cadeira de rodas.",
+                  "peso":2
+               },
+               {  
+                  "id":3,
+                  "titulo":"Pontos: 3 - Deambulação ocasional: deambula ocasionalmente durante o dia, porém por distâncias bem curtas, com ou sem ajuda. Passa a maior parte do turno no leito ou na cadeira.",
+                  "peso":3
+               },
+               {  
+                  "id":4,
+                  "titulo":"Pontos: 4 - Crianças jovens demais para deambular ou deambulam freqüentemente: deambula fora do quarto pelo menos duas vezes por dia e dentro do quarto pelo menos uma vez a cada duas horas durante as horas está acordado.",
+                  "peso":4
+               }
+            ]
+         },
+         {  
+            "id":3,
+            "pergunta":"Percepção sensorial",
+            "descricao":"Capacidade de responder de maneira apropriada ao desconforto relacionado à pressão.",
+            "opcoes":[  
+               {  
+                  "id":1,
+                  "titulo":"Pontos: 1 - Completamente limitada: não responde ao estímulo doloroso (não geme, não se encolhe ou se agarra), devido à diminuição do nível de consciência, ou sedação ou limitação da capacidade de sentir dor na maior parte da superfície corporal.",
+                  "peso":1
+               },
+               {  
+                  "id":2,
+                  "titulo":"Pontos: 2 - Muito limitada: responde apenas ao estímulo doloroso. Não consegue comunicar desconforto, exceto por gemido ou inquietação; ou apresenta alguma disfunção sensorial que limita a capacidade de sentir dor ou desconforto em mais da metade do corpo.",
+                  "peso":2
+               },
+               {  
+                  "id":3,
+                  "titulo":"Pontos: 3 - Levemente limitada: responde aos comandos verbais, mas nem sempre consegue comunicar o desconforto ou a necessidade de ser mudado de posição, ou apresenta alguma disfunção sensorial em uma ou duas extremidades que limita a capacidade de sentir dor. ",
+                  "peso":3
+               },
+               {  
+                  "id":4,
+                  "titulo":"Pontos: 4 - Nenhuma alteração: responde aos comandos verbais. Não apresenta déficit sensorial que limite a capacidade de sentir ou comunicar dor ou desconforto.",
+                  "peso":4
+               }
+            ]
+         },
+         {  
+            "id":4,
+            "pergunta":"Umidade",
+            "descricao":"Grau de exposição da pele à umidade.",
+            "opcoes":[  
+               {  
+                  "id":1,
+                  "titulo":"Pontos: 1 - Constantemente úmida: a pele fica constantemente úmida por suor, urina, etc. A umidade é percebida cada vez que o paciente é movimentado ou mudado de posição.",
+                  "peso":1
+               },
+               {  
+                  "id":2,
+                  "titulo":"Pontos: 2 - Frequentemente úmida:  a pele está frequentemente, mas nem sempre, úmida. A roupa de cama precisa ser trocada pelo menos a cada oito horas.",
+                  "peso":2
+               },
+               {  
+                  "id":3,
+                  "titulo":"Pontos: 3 - Ocasionalmente úmida: a pele está ocasionalmente úmida, necessitando de troca de roupa de cama a cada 12 horas. ",
+                  "peso":3
+               },
+               {  
+                  "id":4,
+                  "titulo":"Pontos: 4 - Raramente úmida: a pele geralmente está seca, as trocas de fraldas são feitas de rotina e as roupas de cama necessitam ser trocadas apenas a cada 24h.",
+                  "peso":4
+               }
+            ]
+         },
+         {  
+            "id":5,
+            "pergunta":"Fricção e cisalhamento",
+            "descricao":"Fricção: a pele se move contra as estruturas de suporte. \nCisalhamento: a pele e a superfície óssea adjacente deslizam uma sobre a outra",
+            "opcoes":[  
+               {  
+                  "id":1,
+                  "titulo":"Pontos: 1 - Problema importante: a espasticidade, a contratura, o prurido ou a agitação levam a criança debater-se no leito e há fricção quase constante.",
+                  "peso":1
+               },
+               {  
+                  "id":2,
+                  "titulo":"Pontos: 2 - Problema: necessita de ajuda moderada a máxima para se mover. É impossível se levantar completamente sem deslizar sobre os lençóis do leito ou cadeira, necessitando de reposicionamento frequente com o máximo de assistência.",
+                  "peso":2
+               },
+               {  
+                  "id":3,
+                  "titulo":"Pontos: 3 - Problema Potencial: movimenta-se com dificuldade ou necessita de mínima assistência. Durante o movimento, provavelmente ocorre atrito entre a pele e os lençóis, cadeira, coxins ou outros dispositivos. A maior parte do tempo mantém uma posição relativamente boa na cadeira e no leito, mas ocasionalmente escorrega.",
+                  "peso":3
+               },
+               {  
+                  "id":4,
+                  "titulo":"Pontos: 4 - Nenhum problema aparente: capaz de levantar-se completamente durante uma mudança de posição. Movimenta-se sozinho na cadeira e no leito, e tem força muscular suficiente para levantar-se completamente durante o movimento. Mantém uma posição adequada no leito e na cadeira o tempo todo.",
+                  "peso":4
+               }
+            ]
+         },
+         {  
+            "id":6,
+            "pergunta":"Nutrição",
+            "descricao":"Padrão habitual de consumo alimentar.",
+            "opcoes":[  
+               {  
+                  "id":1,
+                  "titulo":"Pontos: 1 - Muito pobre: em jejum e/ou mantido com ingesta hídrica ou hidratação IV por mais de 5 dias ou albumina < 2,5 mg/dl ou nunca come uma refeição completa. Raramente come mais da metade de algum alimento oferecido. O consumo de proteínas inclui apenas duas porções de carne ou derivados de leite por dia. Ingere pouco líquido. Não ingere suplemento dietético líquido",
+                  "peso":1
+               },
+               {  
+                  "id":2,
+                  "titulo":"Pontos: 2 - Inadequada: Dieta líquida por sonda ou NPP que fornece calorias e minerais insuficientes para a idade ou albumina < 3 mg/dl ou raramente come uma a refeição completa. Geralmente come apenas a metade de algum alimento oferecido. O consumo de proteínas inclui apenas três porções de carne ou derivados de leite por dia. Ocasionalmente ingere suplemento dietético.",
+                  "peso":2
+               },
+               {  
+                  "id":3,
+                  "titulo":"Pontos: 3 - Adequada: dieta por sonda ou NPP que fornece calorias e minerais suficientes para a idade ou come mais da metade da maioria das refeições. Consome um total de quatro porções de proteínas (carne, derivados de leite) por dia. Ocasionalmente recusa uma refeição, mas geralmente toma suplemento dietético, se oferecido.",
+                  "peso":3
+               },
+               {  
+                  "id":4,
+                  "titulo":"Pontos: 4 - Excelente: dieta geral que fornece calorias suficientes para a idade. Por exemplo, come/bebe a maior parte de cada refeição/alimentação. Nunca recusa uma refeição. Geralmente come um total de quatro ou mais porções de carne e derivados de leite. Ocasionalmente, come entre as refeições. Não necessita de suplementação.",
+                  "peso":4
+               }
+            ]
+         },
+         {  
+            "id":6,
+            "pergunta":"Perfusão tecidual e oxigenação",
+            "descricao":"Padrão habitual de consumo alimentar.",
+            "opcoes":[  
+               {  
+                  "id":1,
+                  "titulo":"Pontos: 1 - Extremamente comprometida: hipotenso (PAM <50 mmHg; <40 mmHg em recém-nascido) ou o paciente não tolera as mudanças de posição.",
+                  "peso":1
+               },
+               {  
+                  "id":2,
+                  "titulo":"Pontos: 2 - Comprometida: normotenso. Apresenta saturação de oxigênio <95% ou a hemoglobina <10 mg/dl ou o tempo de enchimento capilar >2 segundos. O pH sérico <7,40.",
+                  "peso":2
+               },
+               {  
+                  "id":3,
+                  "titulo":"Pontos: 3 - Adequada: normotenso. Apresenta saturação de oxigênio <95% ou a hemoglobina <10 mg/dl ou o tempo de enchimento capilar >2 segundos. O pH sérico é normal.",
+                  "peso":3
+               },
+               {  
+                  "id":4,
+                  "titulo":"Pontos: 4 - Excelente: normotenso. Apresenta saturação de oxigênio >95%, a hemoglobina normal e o tempo de enchimento capilar <2 segundos.",
+                  "peso":4
+               }
+            ]
+         }
+      ],
+      "analise":[  
+         {  
+            "id":1,
+            "valorMin":1,
+            "valorMax":16,
+            "analise":"Risco Alto"
+         },
+         {  
+            "id":2,
+            "valorMin":17,
+            "valorMax":21,
+            "analise":"Risco Moderado"
+         },
+         {  
+            "id":3,
+            "valorMin":22,
+            "valorMax":25,
+            "analise":"Risco baixo"
+         }
+      ]
+   },
+   {  
+      "id":4,
+      "nome":"Escala de Braden ",
+      "tipo":"N",
+      "descricao":"",
+      "perguntas":[  
+         {  
+            "id":1,
+            "pergunta":"Percepção sensorial",
+            "descricao":"Capacidade de reagir significativamente à pressão relacionada ao desconforto.",
+            "opcoes":[  
+               {  
+                  "id":1,
+                  "titulo":"Pontos: 1 - Totalmente limitado: Não reage (não geme, não se segura a nada, não se esquiva) a estímulo doloroso, devido ao nível de consciência diminuído ou devido à sedação ou capacidade limitada de sentir dor na maior parte do corpo. ",
+                  "peso":1
+               },
+               {  
+                  "id":2,
+                  "titulo":"Pontos: 2 - Muito limitado: Somente reage a estímulo doloroso. Não é capaz de comunicar desconforto exceto através de gemido ou agitação. Ou possui alguma deficiência sensorial que limita a capacidade de sentir dor ou desconforto em mais de metade do corpo.",
+                  "peso":2
+               },
+               {  
+                  "id":3,
+                  "titulo":"Pontos: 3 - Levemente limitado: Responde a comando verbal, mas nem sempre é capaz de comunicar o desconforto ou expressar necessidade de ser mudado de posição ou tem um certo grau de deficiência sensorial que limita a capacidade de sentir dor ou desconforto em 1 ou 2 extremidades.",
+                  "peso":3
+               },
+               {  
+                  "id":4,
+                  "titulo":"Pontos: 4 - Nenhuma limitação: Responde a comandos verbais: não tem déficit sensorial que limitaria a capacidade de sentir ou verbalizar dor ou desconforto.",
+                  "peso":4
+               }
+            ]
+         },
+         {  
+            "id":2,
+            "pergunta":"Umidade",
+            "descricao":"Nível ao qual a pele é exposta à umidade.",
+            "opcoes":[  
+               {  
+                  "id":1,
+                  "titulo":"Pontos: 1 - Completamente molhada: A pele é mantida molhada quase constantemente por transpiração, urina, etc. Umidade é detectada às movimentações do paciente.",
+                  "peso":1
+               },
+               {  
+                  "id":2,
+                  "titulo":"Pontos: 2 - Muito molhada: A pele esta freqüentemente,mas nem sempre, molhada. A roupa de cama deve ser trocada pelo menos uma vez por turno.",
+                  "peso":2
+               },
+               {  
+                  "id":3,
+                  "titulo":"Pontos: 3 - Ocasionalmente molhada: A pele fica ocasionalmente molhada requerendo uma troca extra de roupa de cama por dia.",
+                  "peso":3
+               },
+               {  
+                  "id":4,
+                  "titulo":"Pontos: 4 - Raramente molhada: a pele geralmente está seca, a troca de roupa de cama é necessária somente nos intervalos de rotina.",
+                  "peso":4
+               }
+            ]
+         },
+         {  
+            "id":3,
+            "pergunta":"Atividade",
+            "descricao":"Grau de atividade física",
+            "opcoes":[  
+               {  
+                  "id":1,
+                  "titulo":"Pontos: 1 - Acamado: Confinado à cama.",
+                  "peso":1
+               },
+               {  
+                  "id":2,
+                  "titulo":"Pontos: 2 - Confinado à cadeira: Capacidade de andar está severamente limitada ou nula. Não é capaz de sustentar o próprio peso e/ou precisa ser ajudado a se sentar.",
+                  "peso":2
+               },
+               {  
+                  "id":3,
+                  "titulo":"Pontos: 3 - Anda ocasionalmente: Anda ocasionalmente durante o dia, embora distâncias muito curtas, com ou sem ajuda. Passa a maior parte de cada turno na cama ou na cadeira.",
+                  "peso":3
+               },
+               {  
+                  "id":4,
+                  "titulo":"Pontos: 4 - Anda freqüentemente: Anda fora do quarto pelo menos 2 vezes por dia e dentro do quarto pelo menos uma vez a cada 2 horas durante as horas em que está acordado.",
+                  "peso":4
+               }
+            ]
+         },
+         {  
+            "id":4,
+            "pergunta":"Mobilidade",
+            "descricao":"Capacidade de mudar e controlar a posição do copo.",
+            "opcoes":[  
+               {  
+                  "id":1,
+                  "titulo":"Pontos: 1 - Totalmente imóvel: Não faz nem mesmo pequenas mudanças na posição do corpo ou extremidades sem ajuda.",
+                  "peso":1
+               },
+               {  
+                  "id":2,
+                  "titulo":"Pontos: 2 - Bastante limitado: Faz pequenas mudanças ocasionais na posição do corpo ou extremidades, mas é incapaz de fazer mudanças freqüentes ou significantes sozinho.",
+                  "peso":2
+               },
+               {  
+                  "id":3,
+                  "titulo":"Pontos: 3 - Levemente limitado: Faz freqüentes, embora pequenas, mudanças na posição do corpo ou extremidades sem ajuda.",
+                  "peso":3
+               },
+               {  
+                  "id":4,
+                  "titulo":"Pontos: 4 - Não apresenta limitações: Faz importante e freqüentes mudanças de posição sem auxílio.",
+                  "peso":4
+               }
+            ]
+         },
+         {  
+            "id":5,
+            "pergunta":"Nutrição",
+            "descricao":"Padrão usual de consumo alimentar.",
+            "opcoes":[  
+               {  
+                  "id":1,
+                  "titulo":"Pontos: 1 - Muito pobre: Nunca come uma refeição completa. Raramente come mais de 1/3 do alimento oferecido. Come 2 porções ou menos de proteína (carne ou laticínio) por dia. Ingere pouco líquido. Não aceita suplemento alimentar líquido. Ou é mantido em jejum e/ou mantido com dieta líquida ou IVs por mais de cinco dias.",
+                  "peso":1
+               },
+               {  
+                  "id":2,
+                  "titulo":"Pontos: 2 - Provavelmente inadequado: Raramente come uma refeição completa e geralmente come cerca de metade do alimento oferecido. Ingestão de proteína inclui somente 3 porções de carne ou laticínios por dia. Ocasionalmente aceitará um suplemento alimentar ou recebe abaixo da quantidade satisfatória de dieta líquida ou alimentação por sonda.",
+                  "peso":2
+               },
+               {  
+                  "id":3,
+                  "titulo":"Pontos: 3 - Adequado: Come mais de metade da maioria das refeições. Come no total de 4 porções de alimento rico em proteína (carne ou laticínio) todo dia. Ocasionalmente recusará uma refeição, mas geralmente aceitará um complemento oferecido ou é alimento por sonda ou regime de nutrição parenteral total o qual provavelmente satisfaz a maior parte das necessidades nutricionais.",
+                  "peso":3
+               },
+               {  
+                  "id":4,
+                  "titulo":"Pontos: 4 - Excelente: Come a maior parte de cada refeição. Nunca recusa uma refeição. Geralmente ingere um total de 4 ou mais porções de carne e laticínios. Ocasionalmente come entre as refeições. Não requer suplemento alimentar.",
+                  "peso":4
+               }
+            ]
+         },
+         {  
+            "id":6,
+            "pergunta":"Fricção e Cisalhamento",
+            "descricao":"Fricção: a pele se move contra as estruturas de suporte. \nCisalhamento: a pele e a superfície óssea adjacente deslizam uma sobre a outra.",
+            "opcoes":[  
+               {  
+                  "id":1,
+                  "titulo":"Pontos: 1 - Problema: Requer assistência moderada a máxima para se mover. É impossível levantá-lo ou erguê-lo completamente sem que haja atrito da pele com o lençol. Freqüentemente escorrega na cama ou na cadeira, necessitando freqüentes ajustes de posição com máximo de assistência. Elasticidade, contratura ou agitação leva à quase constante fricção.",
+                  "peso":1
+               },
+               {  
+                  "id":2,
+                  "titulo":"Pontos: 2 - Problema em potencial: Move-se, mas sem vigor, ou requer mínima assistência. Durante o movimento provavelmente ocorre um certo atrito da pele com o lençol, cadeira ou outros. Na maior parte do tempo mantém posição relativamente boa na cama ou cadeira mas ocasionalmente escorrega.",
+                  "peso":2
+               },
+               {  
+                  "id":3,
+                  "titulo":"Pontos: 3 - Nenhum problema: Move-se sozinho na cama ou cadeira e tem suficiente força muscular para erguer-se completamente durante o movimento. Sempre mantém boa posição na cama ou na cadeira.",
+                  "peso":3
+               }
+            ]
+         }
+      ],
+      "analise":[  
+         {  
+            "id":1,
+            "valorMin":1,
+            "valorMax":9,
+            "analise":"Risco muito elevado para formação de UP."
+         },
+         {  
+            "id":2,
+            "valorMin":10,
+            "valorMax":12,
+            "analise":"Risco elevado para ocorrência de UP."
+         },
+         {  
+            "id":3,
+            "valorMin":13,
+            "valorMax":14,
+            "analise":"Risco moderado para ocorrência de UP."
+         },
+         {  
+            "id":4,
+            "valorMin":15,
+            "valorMax":18,
+            "analise":"Risco leve para a ocorrência de UP."
+         }
+      ]
+   },
+   {  
+      "id":5,
+      "nome":"Escala de NAS",
+      "tipo":"D",
+      "descricao":"Escala de NAS.",
+      "perguntas":[  
+         {  
+            "id":1,
+            "pergunta":"Monitorização e Controles",
+            "descricao":"Descrição nas alternativas",
+            "opcoes":[  
+               {  
+                  "id":1,
+                  "titulo":"Pontos: 4,5 - Sinais vitais horários, cálculo e registro regular do balanço hídrico. Normal/Rotina.",
+                  "peso":45
+               },
+               {  
+                  "id":2,
+                  "titulo":"Pontos: 12,1 - Presença à beira do leito e observações ou atividade contínua por 2h ou mais por razões de segurança, gravidade ou terapia. Ex: VMNI, desmame, agitação, confusão mental, prona, procedimentos de doação de órgãos, preparo e administração de fluidos ou medicações, auxílio em procedimentos específicos, admissão POI estável, paciente instável, hipotensão, oligúria, taquicardia, dispnéia, febre, alteração do nível de consciência, reposição volêmica, droga vasoativa e antiarrítmicos (paciente estável), auxílio na adm de dieta VO).",
+                  "peso":121
+               },
+               {  
+                  "id":3,
+                  "titulo":"Pontos: 19,6 - Presença à beira do leito e observação ou atividade contínua por 4h ou mais (medicações ou monitorizações de h/h). Enfermeiro ou téc. de enf. não conseguem sair do box, paciente gravíssimo, POI instável, droga vasoativa (paciente instável). Muito além do normal.",
+                  "peso":196
+               }
+            ]
+         },
+         {  
+            "id":2,
+            "pergunta":"Investigações Laboratoriais Bioquímicas e microbiógicas",
+            "descricao":"Amostas sanguíneas coletadas pelo enfermeiro ou téc de enf da UTI. Swab, urocultura, EQU, AT pela enfermagem, hemocultura gasometria, HGT.",
+            "opcoes":[  
+               {  
+                  "id":1,
+                  "titulo":"Pontos: 4,3 - SIM",
+                  "peso":43
+               },
+               {  
+                  "id":2,
+                  "titulo":"Pontos: 0 - NÃO",
+                  "peso":0
+               }
+            ]
+         },
+         {  
+            "id":3,
+            "pergunta":"Medicações",
+            "descricao":"Exceto drogas vasoativas.",
+            "opcoes":[  
+               {  
+                  "id":1,
+                  "titulo":"Pontos: 5,6 - SIM",
+                  "peso":56
+               },
+               {  
+                  "id":2,
+                  "titulo":"Pontos: 0 - NÃO",
+                  "peso":0
+               }
+            ]
+         },
+         {  
+            "id":4,
+            "pergunta":"Procedimentos de Higiene",
+            "descricao":"Descrição nas alternativas.",
+            "opcoes":[  
+               {
+                  "id":1,
+                  "titulo":"Pontos: 4,1 - Realização de procedimentos de higiene (normal). Curativo de ferida e cateter 1x em 24h, troca de roupa de cama 1x em 24h, higiene corporal (oral, ocular e íntima) 1x por plantão ou situações especiais (incontinência, vômito, queimaduras, feridas com secreção, curativos cirúrgicos complexos com irrigação),curativo pequeno em UP 1x em 24h, banho em paciente estável com 2 profissionais.",
+                  "peso":41
+               },
+               {  
+                  "id":2,
+                  "titulo":"Pontos: 16,5 - Realização de procedimentos de higiene (além do normal). Curativo de cateter 2x ao dia, curativo médio em UP, curativo em FO 2x ao dia, curativo médio (com deiscência de sutura), troca de roupa de cama 2x em 24h, banho em paciente instável com 3 profissionais, higiene corporal 2x por plantão, paciente em isolamento.",
+                  "peso":165
+               },
+               {
+                 "id":3,
+                 "titulo":"Pontos: 20 - Realização de procedimentos de higiene (muito além do normal). Curativo de cateter ≥ 3x em 24h, curativo grande, complexo, extenso, cavidade aberta,curativo médio em incisão cirúrgica ≥ 3x em 24h. Ex: fournier, Steven Johnson, grande queimado.",
+                 "peso":200
+               }
+            ]
+         },
+         {
+            "id":5,
+            "pergunta":"Cuidados com Drenos",
+            "descricao":"DVE, SVD, drenos torácicos e abdominais. Não inclui SNG.",
+            "opcoes":[  
+               {  
+                  "id":1,
+                  "titulo":"Pontos: 1,8 - SIM",
+                  "peso":18
+               },
+               {  
+                  "id":2,
+                  "titulo":"Pontos: 0 - NÃO",
+                  "peso":0
+               }
+            ]
+         },
+         {  
+            "id":6,
+            "pergunta":"Mobilização e Posicionamento.",
+            "descricao":"Mudança de decúbito, transferência da cama para a cadeira; mobilização do paciente em equipe (paciente imóvel, tração, prona).",
+            "opcoes":[  
+               {  
+                  "id":1,
+                  "titulo":"Pontos: 5,5 - Realização do(s) procedimento(s) até 3 x em 24h. POI de cirurgia cardíaca, hemodiálise (sem mobilização do paciente).",
+                  "peso":55
+               },
+               {  
+                  "id":2,
+                  "titulo":"Pontos: 12,4 - Realização do(s) procedimento(s) mais do que 3x em 24h ou com 2 profissionais em qualquer freqüência",
+                  "peso":124
+               },
+               {
+                  "id":3,
+                  "titulo":"Pontos: 17,0 - Realização do(s) procedimento(s) com 3 ou mais profissionais em qualquer freqüência.",
+                  "peso":170
+               }
+            ]
+         },
+         {
+            "id":7,
+            "pergunta":"Suporte e Cuidados aos Familiares e Pacientes",
+            "descricao":"Descrição nas alternativas.",
+            "opcoes":[  
+               {  
+                  "id":1,
+                  "titulo":"Pontos: 4,0 - Suporte e cuidados aos familiares e pacientes que requerem dedicação exclusiva por cerca de ≤ 30’ / ≤ 2h (normal). Explicar condições clínicas, lidar com dor e angústia, lidar com circunstâncias familiares difíceis. Aplica-se ao familiar ou paciente que não interferem na dinâmica da equipe.",
+                  "peso":40
+               },
+               {  
+                  "id":2,
+                  "titulo":"Pontos: 32,0 - Suporte e cuidados aos familiares e pacientes que requerem dedicação exclusiva por > 30’ / > 2h (além do normal). Suporte e cuidados aos familiares e pacientes que requerem dedicação por 3h ou mais: morte, circunstâncias trabalhosas (grande número de familiares, problemas de linguagem, familiares hostis).",
+                  "peso":320
+               }
+            ]
+         },
+         {
+            "id":8,
+            "pergunta":"Tarefas Administrativas e Gerenciais",
+            "descricao":"Descrição nas alternativas",
+            "opcoes":[  
+               {  
+                  "id":1,
+                  "titulo":"Pontos: 4,2 - Realização de tarefas de rotina (normal). Processamento de dados clínicos, solicitação de exames, troca de informações profissionais, passagem de plantão, visitas clínicas, evolução, prescrição, anotação de BH.",
+                  "peso":42
+               },
+               {  
+                  "id":2,
+                  "titulo":"Pontos: 23,2 - Realização de tarefas administrativas e gerenciais que requerem dedicação integral por cerca de 2h (além da normal). Atividades de pesquisa, aplicação de protocolos, procedimentos de admissão e alta, necessidade de providenciar materiais e equipamentos.",
+                  "peso":232
+               },
+               {
+                  "id":3,
+                  "titulo":"Pontos: 30,0 - Realização de tarefas administrativas e gerenciais que requerem dedicação integral por cerca de 4 h ou mais (muito além do normal). Morte e procedimentos de doação de órgãos, coordenação com outras disciplinas, procedimentos cirúrgicos no box.",
+                  "peso":300
+               }
+            ]
+         },
+         {  
+            "id":9,
+            "pergunta":"Suporte ventilatório: Suporte ventilatório. Cateter nasal, óculos nasal, máscara: qualquer dispositivo que ofereça suporte de O2.",
+            "descricao":"Suporte ventilatório. Cateter nasal, óculos nasal, máscara: qualquer dispositivo que ofereça suporte de O2.",
+            "opcoes":[  
+               {  
+                  "id":1,
+                  "titulo":"Pontos: 1,4 - SIM",
+                  "peso":14
+               },
+               {  
+                  "id":2,
+                  "titulo":"Pontos: 0 - NÃO",
+                  "peso":0
+               }
+            ]
+         },
+         {  
+            "id":10,
+            "pergunta":"Suporte ventilatório: Cuidados com vias aéreas artificiais. TOT ou cânula de traqueostomia.",
+            "descricao":"Cuidados com vias aéreas artificiais. TOT ou cânula de traqueostomia.",
+            "opcoes":[  
+               {  
+                  "id":1,
+                  "titulo":"Pontos: 1,8 - SIM",
+                  "peso":18
+               },
+               {  
+                  "id":2,
+                  "titulo":"Pontos: 0 - NÃO",
+                  "peso":0
+               }
+            ]
+         },
+         {  
+            "id":11,
+            "pergunta":"Suporte ventilatório: Tratamento para melhora da função pulmonar. Aspiração de vias aéreas, nebulização, aerossol.",
+            "descricao":"Tratamento para melhora da função pulmonar. Aspiração de vias aéreas, nebulização, aerossol.",
+            "opcoes":[  
+               {  
+                  "id":1,
+                  "titulo":"Pontos: 4,4 - SIM",
+                  "peso":44
+               },
+               {  
+                  "id":2,
+                  "titulo":"Pontos: 0 - NÃO",
+                  "peso":0
+               }
+            ]
+         },
+         {  
+            "id":12,
+            "pergunta":"Suporte Cardiovascular: Medicação vasoativa. Qualquer droga (VO, EV, SL) com efeito vasoativo que requer monitorização(Ex: captopril, enalapril, NPS,NTG, noradrenalina, etc).",
+            "descricao":"Medicação vasoativa. Qualquer droga (VO, EV, SL) com efeito vasoativo que requer monitorização(Ex: captopril, enalapril, NPS,NTG, noradrenalina, etc).",
+            "opcoes":[  
+               {  
+                  "id":1,
+                  "titulo":"Pontos: 1,2 - SIM",
+                  "peso":12
+               },
+               {  
+                  "id":2,
+                  "titulo":"Pontos: 0 - NÃO",
+                  "peso":0
+               }
+            ]
+         },
+         {  
+            "id":13,
+            "pergunta":"Suporte Cardiovascular: Reposição intravenosa de grandes perdas de fluidos. > 3L/m²/dia Ex: SF, ringer, hemoderivados.",
+            "descricao":"Reposição intravenosa de grandes perdas de fluidos. > 3L/m²/dia Ex: SF, ringer, hemoderivados.",
+            "opcoes":[  
+               {  
+                  "id":1,
+                  "titulo":"Pontos: 2,5 - SIM",
+                  "peso":25
+               },
+               {  
+                  "id":2,
+                  "titulo":"Pontos: 0 - NÃO",
+                  "peso":0
+               }
+            ]
+         },
+         {  
+            "id":14,
+            "pergunta":"Suporte Cardiovascular: Monitorização do átrio esquerdo (Swan-Ganz).",
+            "descricao":"Monitorização do átrio esquerdo (Swan-Ganz).",
+            "opcoes":[  
+               {  
+                  "id":1,
+                  "titulo":"Pontos: 1,7 - SIM",
+                  "peso":17
+               },
+               {  
+                  "id":2,
+                  "titulo":"Pontos: 0 - NÃO",
+                  "peso":0
+               }
+            ]
+         },
+         {  
+            "id":15,
+            "pergunta":"Suporte Cardiovascular: Reanimação cardiorrespiratória nas últimas 24 h.",
+            "descricao":"Reanimação cardiorrespiratória nas últimas 24 h.",
+            "opcoes":[  
+               {  
+                  "id":1,
+                  "titulo":"Pontos: 7,1 - SIM",
+                  "peso":71
+               },
+               {  
+                  "id":2,
+                  "titulo":"Pontos: 0 - NÃO",
+                  "peso":0
+               }
+            ]
+         },
+         {  
+            "id":16,
+            "pergunta":"Suporte Renal: Técnicas de hemofiltração. Técnicas dialíticas.",
+            "descricao":"Técnicas de hemofiltração. Técnicas dialíticas.",
+            "opcoes":[  
+               {  
+                  "id":1,
+                  "titulo":"Pontos: 7,7 - SIM",
+                  "peso":77
+               },
+               {  
+                  "id":2,
+                  "titulo":"Pontos: 0 - NÃO",
+                  "peso":0
+               }
+            ]
+         },
+         {  
+            "id":17,
+            "pergunta":"Suporte Renal: Medida quantitativa do débito urinário (SVD, papagaio, uripen, etc)",
+            "descricao":"Medida quantitativa do débito urinário (SVD, papagaio, uripen, etc)",
+            "opcoes":[  
+               {  
+                  "id":1,
+                  "titulo":"Pontos: 7,0 - SIM",
+                  "peso":70
+               },
+               {  
+                  "id":2,
+                  "titulo":"Pontos: 0 - NÃO",
+                  "peso":0
+               }
+            ]
+         },
+         {  
+            "id":18,
+            "pergunta":"Suporte Neurológico",
+            "descricao":"Medida da pressão intracraniana",
+            "opcoes":[  
+               {  
+                  "id":1,
+                  "titulo":"Pontos: 1,6 - SIM",
+                  "peso":16
+               },
+               {  
+                  "id":2,
+                  "titulo":"Pontos: 0 - NÃO",
+                  "peso":0
+               }
+            ]
+         },
+         {  
+            "id":19,
+            "pergunta":"Suporte Metabólico: Tratamento de acidose/alcalose metabólica complicada.",
+            "descricao":"Tratamento de acidose/alcalose metabólica complicada",
+            "opcoes":[  
+               {  
+                  "id":1,
+                  "titulo":"Pontos: 1,3 - SIM",
+                  "peso":13
+               },
+               {  
+                  "id":2,
+                  "titulo":"Pontos: 0 - NÃO",
+                  "peso":0
+               }
+            ]
+         },
+         {  
+            "id":20,
+            "pergunta":"Suporte Metabólico: Hiperalimentação intravenosa (NPT).",
+            "descricao":"Hiperalimentação intravenosa (NPT)",
+            "opcoes":[  
+               {  
+                  "id":1,
+                  "titulo":"Pontos: 2,8 - SIM",
+                  "peso":28
+               },
+               {  
+                  "id":2,
+                  "titulo":"Pontos: 0 - NÃO",
+                  "peso":0
+               }
+            ]
+         },
+         {  
+            "id":21,
+            "pergunta":"Suporte Metabólico: Alimentação enteral(ex: SNE, gastrostomia, jejunostomia).",
+            "descricao":"Alimentação enteral(ex: SNE, gastrostomia, jejunostomia)",
+            "opcoes":[  
+               {  
+                  "id":1,
+                  "titulo":"Pontos: 1,3 - SIM",
+                  "peso":13
+               },
+               {  
+                  "id":2,
+                  "titulo":"Pontos: 0 - NÃO",
+                  "peso":0
+               }
+            ]
+         },
+         {  
+            "id":22,
+            "pergunta":"Intervenções Específicas: Intervenções específicas na UTI. Intubação endotraqueal, inserção de marca-passo, cardioversão, endoscopia, cirurgia de emergência nas últimas 24 h, lavagem gástrica. Considerar aumento da necessidade de trabalho de enfermagem para assistir procedimentos de rotina: ecografia, ECG, inserção de cateteres venosos ou arteriais).",
+            "descricao":"Intervenções específicas na UTI. Intubação endotraqueal, inserção de marca-passo, cardioversão, endoscopia, cirurgia de emergência nas últimas 24 h, lavagem gástrica. Considerar aumento da necessidade de trabalho de enfermagem para assistir procedimentos de rotina: ecografia, ECG, inserção de cateteres venosos ou arteriais)",
+            "opcoes":[  
+               {  
+                  "id":1,
+                  "titulo":"Pontos: 2,8 - SIM",
+                  "peso":28
+               },
+               {  
+                  "id":2,
+                  "titulo":"Pontos:  0 - NÃO",
+                  "peso":0
+               }
+            ]
+         },
+         {  
+            "id":23,
+            "pergunta":"Intervenções Específicas: Intervenções específicas fora da UTI. Transporte para exames, cirurgia e transferência de unidade, inclusive alta.",
+            "descricao":"Intervenções específicas fora da UTI. Transporte para exames, cirurgia e transferência de unidade, inclusive alta",
+            "opcoes":[  
+               {  
+                  "id":1,
+                  "titulo":"Pontos: 1,9 - SIM",
+                  "peso":19
+               },
+               {  
+                  "id":2,
+                  "titulo":"Pontos: 0 - NÃO",
+                  "peso":0
+               }
+            ]
+         }
+      ],
+      "analise":[  
+         {  
+            "id":1,
+            "valorMin":0,
+            "valorMax":500,
+            "analise":"EXIBE TOTAL"
+         }
+      ]
+   },
+   {  
+      "id":6,
+      "nome":"Escala de Perroca",
+      "tipo":"N",
+      "descricao":"Sistema de classificação de pacientes",
+      "perguntas":[  
+         {  
+            "id":1,
+            "pergunta":"Estado Mental e Nível de Consciência",
+            "descricao":"Habilidade em manter a percepção e as atividades cognitivas.",
+            "opcoes":[  
+               {  
+                  "id":1,
+                  "titulo":"Pontos: 1 - Acordado; interpretação precisa de ambiente e tempo; executa, sempre, corretamente, ordens verbalizadas; preservação da memória.",
+                  "peso":1
+               },
+               {  
+                  "id":2,
+                  "titulo":"Pontos: 2 - Acordado; interpretação precisa de ambiente e tempo; segue instruções corretamente apenas algumas vezes; dificuldade de memória.",
+                  "peso":2
+               },
+               {  
+                  "id":3,
+                  "titulo":"Pontos: 3 - Acordado; interpretação imprecisa de ambiente e tempo em alguns momentos; dificilmente segue instruções corretamente; dificuldade aumentada de memória.",
+                  "peso":3
+               },
+               {  
+                  "id":4,
+                  "titulo":"Pontos: 4 - Acordado; interpretação imprecisa de ambiente e tempo em todos os momentos; não segue instruções corretamente; perda de memória.",
+                  "peso":4
+               },
+               {  
+                  "id":5,
+                  "titulo":"Pontos: 5 - Desacordado; ausência de resposta verbal e manutenção de respostas à estímulos dolorosos ou ausência de respostas verbais e motoras.",
+                  "peso":5
+               }
+            ]
+         },
+         {  
+            "id":2,
+            "pergunta":"Oxigenação",
+            "descricao":"Aptidão em manter a permeabilidade das vias aéreas e o equilíbrio nas trocas gasosas por si mesmo, com auxílio da equipe de enfermagem e/ou de equipamentos.",
+            "opcoes":[  
+               {  
+                  "id":1,
+                  "titulo":"Pontos: 1 - Não requer oxigenoterapia.",
+                  "peso":1
+               },
+               {  
+                  "id":2,
+                  "titulo":"Pontos: 2 - Requer uso intermitente ou contínuo de oxigênio sem necessidade de desobstrução de vias aéreas.",
+                  "peso":2
+               },
+               {  
+                  "id":3,
+                  "titulo":"Pontos: 3 - Requer uso intermitente ou contínuo de oxigênio com necessidade de desobstrução de vias aéreas.",
+                  "peso":3
+               },
+               {  
+                  "id":4,
+                  "titulo":"Pontos: 4 - Requer uso de oxigênio por traqueostomia ou tubo orotraqueal.",
+                  "peso":4
+               },
+               {  
+                  "id":5,
+                  "titulo":"Pontos: 5 - Requer ventilação mecânica.",
+                  "peso":5
+               }
+            ]
+         },
+         {  
+            "id":3,
+            "pergunta":"Sinais Vitais",
+            "descricao":"necessidade de observação e de controle dos parâmetros vitais: temperatura corporal, pulso, padrão respiratório, saturação de oxigênio e pressão arterial, arterial média e venosa central.",
+            "opcoes":[  
+               {  
+                  "id":1,
+                  "titulo":"Pontos: 1 - Requer controle de sinais vitais em intervalos de 6 horas.",
+                  "peso":1
+               },
+               {  
+                  "id":2,
+                  "titulo":"Pontos: 2 - Requer controle de sinais vitais em intervalos de 4 horas.",
+                  "peso":2
+               },
+               {  
+                  "id":3,
+                  "titulo":"Pontos: 3 - Requer controle de sinais vitais em intervalos de 2 horas.",
+                  "peso":3
+               },
+               {  
+                  "id":4,
+                  "titulo":"Pontos: 4 - Requer controle de sinais vitais em intervalos menores do que 2 horas.",
+                  "peso":4
+               },
+               {  
+                  "id":5,
+                  "titulo":"Pontos: 5 - Requer controle de sinais vitais em intervalos menores do que 2 horas e controle de pressão arterial média e/ou pressão venosa central e/ou saturação de oxigênio.",
+                  "peso":5
+               }
+            ]
+         },
+         {  
+            "id":4,
+            "pergunta":"Nutrição e Hidratação",
+            "descricao":"habilidade de ingerir nutrientes e líquidos para atender às necessidades metabólicas, por si mesmo, com auxílio de acompanhantes ou da equipe de enfermagem ou por meio de sondas e catéteres.",
+            "opcoes":[  
+               {  
+                  "id":1,
+                  "titulo":"Pontos: 1 - Auto-suficiente.",
+                  "peso":1
+               },
+               {  
+                  "id":2,
+                  "titulo":"Pontos: 2 - Requer encorajamento e supervisão da enfermagem na nutrição e hidratação oral.",
+                  "peso":2
+               },
+               {  
+                  "id":3,
+                  "titulo":"Pontos: 3 - Requer orientação e supervisão de enfermagem ao acompanhante para auxílio na nutrição e hidratação oral.",
+                  "peso":3
+               },
+               {  
+                  "id":4,
+                  "titulo":"Pontos: 4 - Requer auxílio da enfermagem na nutrição e hidratação oral e alimentação por sonda nasogástrica ou nasoenteral ou estoma.",
+                  "peso":4
+               },
+               {  
+                  "id":5,
+                  "titulo":"Pontos: 5 - Requer assistência efetiva da enfermagem para manipulação de catéteres periféricos ou centrais para nutrição e hidratação.",
+                  "peso":5
+               }
+            ]
+         },
+         {  
+            "id":5,
+            "pergunta":"Motilidade",
+            "descricao":"capacidade de movimentar os segmentos corporais de forma independen do acompanhante ou da equipe de enfermagem ou pelo uso de artefatos.",
+            "opcoes":[  
+               {  
+                  "id":1,
+                  "titulo":"Pontos: 1 - Auto-suficiente.",
+                  "peso":1
+               },
+               {  
+                  "id":2,
+                  "titulo":"Pontos: 2 - Requer estímulo e supervisão da enfermagem para a movimentação de um ou mais segmentos corporais.",
+                  "peso":2
+               },
+               {  
+                  "id":3,
+                  "titulo":"Pontos: 3 - Requer orientação e supervisão de enfermagem ao acompanhante para auxílio na movimentação de um ou mais segmentos corporais.",
+                  "peso":3
+               },
+               {  
+                  "id":4,
+                  "titulo":"Pontos: 4 - Requer auxílio da enfermagem para a movimentação de um ou mais segmentos corporais.",
+                  "peso":4
+               },
+               {  
+                  "id":5,
+                  "titulo":"Pontos: 5 - Requer assistência efetiva da enfermagem para movimentação de qualquer segmento corporal devido a presença de aparelhos gessados, tração, fixador externo e outros, ou por déficit motor.",
+                  "peso":5
+               }
+            ]
+         },
+         {  
+            "id":6,
+            "pergunta":"Locomocão",
+            "descricao":"habilidade para movimentar-se dentro do ambiente físico por si só, com Auxílio do acompanhante ou da equipe de enfermagem ou pelo uso de artefatos.",
+            "opcoes":[  
+               {  
+                  "id":1,
+                  "titulo":"Pontos: 1 - Auto-suficiente.",
+                  "peso":1
+               },
+               {  
+                  "id":2,
+                  "titulo":"Pontos: 2 - Requer encorajamento e supervisão da enfermagem para a deambulação.",
+                  "peso":2
+               },
+               {  
+                  "id":3,
+                  "titulo":"Pontos: 3 - Requer orientação e supervisão de enfermagem ao acompanhante para auxílio no uso de artefatos (órteses, próteses, muletas, bengalas, cadeiras de rodas, andadores).",
+                  "peso":3
+               },
+               {  
+                  "id":4,
+                  "titulo":"Pontos: 4 - Requer o auxílio da enfermagem no uso de artefatos para a deambulação.",
+                  "peso":4
+               },
+               {  
+                  "id":5,
+                  "titulo":"Pontos: 5 - Requer assistência efetiva de enfermagem para locomoção devido `a restrição no leito.",
+                  "peso":5
+               }
+            ]
+         },
+         {  
+            "id":7,
+            "pergunta":"Cuidado Corporal",
+            "descricao":"Capacidade para realizar por si mesmo ou com auxílio de outros, atividades de higiene pessoal e conforto, de vestir-se e arrumar-se.",
+            "opcoes":[  
+               {  
+                  "id":1,
+                  "titulo":"Pontos: 1 - Auto-suficiente.",
+                  "peso":1
+               },
+               {  
+                  "id":2,
+                  "titulo":"Pontos: 2 - Requer supervisão de enfermagem na realização do cuidado corporal e conforto.",
+                  "peso":2
+               },
+               {  
+                  "id":3,
+                  "titulo":"Pontos: 3 - Requer orientação e supervisão de enfermagem ao acompanhante para auxílio na higiene oral, higiene íntima, banho de chuveiro e medidas de conforto.",
+                  "peso":3
+               },
+               {  
+                  "id":4,
+                  "titulo":"Pontos: 4 - Requer auxílio da enfermagem na higiene oral, higiene íntima, banho de chuveiro e medidas de conforto.",
+                  "peso":4
+               },
+               {  
+                  "id":5,
+                  "titulo":"Pontos: 5 - Requer assistência efetiva da enfermagem para o cuidado corporal e medidas de conforto devido à restrição no leito.",
+                  "peso":5
+               }
+            ]
+         },
+         {  
+            "id":8,
+            "pergunta":"Eliminações",
+            "descricao":"Habilidade em manter as diversas formas de eliminações sozinho, com auxílio do acompanhante ou da enfermagem ou por drenos e estornas.",
+            "opcoes":[  
+               {  
+                  "id":1,
+                  "titulo":"Pontos: 1 - Auto-suficiente.",
+                  "peso":1
+               },
+               {  
+                  "id":2,
+                  "titulo":"Pontos: 2 - Requer supervisão e controle pela enfermagem das eliminações.",
+                  "peso":2
+               },
+               {  
+                  "id":3,
+                  "titulo":"Pontos: 3 - Requer orientação e supervisão de enfermagem ao acompanhante para auxílio no uso de comadre, papagaio, troca de fraldas, absorventes e outros, e controle, pela enfermagem, das eliminações.",
+                  "peso":3
+               },
+               {  
+                  "id":4,
+                  "titulo":"Pontos: 4 - Requer auxílio e controle pela enfermagem no uso de comadre, papagaio, troca de fraldas, absorventes e outros.",
+                  "peso":4
+               },
+               {  
+                  "id":5,
+                  "titulo":"Pontos: 5 - Requer assistência efetiva de enfermagem para manipulação e controle de catéteres, drenos, dispositivo para incontinência urinária ou estomas.",
+                  "peso":5
+               }
+            ]
+         },
+         {  
+            "id":9,
+            "pergunta":"Terapêutica",
+            "descricao":"Utilização dos diversos agentes terapêuticos medicamentosos prescritos.",
+            "opcoes":[  
+               {  
+                  "id":1,
+                  "titulo":"Pontos: 1 - Requer medicação VO de rotina ou ID, SC ou IM.",
+                  "peso":1
+               },
+               {  
+                  "id":2,
+                  "titulo":"Pontos: 2 - Requer medicação EV contínua e/ou através de sonda nasogástrica, nasoenteral ou estorna.",
+                  "peso":2
+               },
+               {  
+                  "id":3,
+                  "titulo":"Pontos: 3 - Requer medicação EV intermitente com manutenção de catéter.",
+                  "peso":3
+               },
+               {  
+                  "id":4,
+                  "titulo":"Pontos: 4 - Requer uso de sangue e derivados ou expansores plasmáticos ou agentes citostáticos.",
+                  "peso":4
+               },
+               {  
+                  "id":5,
+                  "titulo":"Pontos: 5 - Requer uso de drogas vasoativas ou outras que exigem maiores cuidados na administração.",
+                  "peso":5
+               }
+            ]
+         },
+         {  
+            "id":10,
+            "pergunta":"Educação à Saúde",
+            "descricao":"Habilidade do paciente/família em receber e aceitar orientações sobre autocuidado.",
+            "opcoes":[  
+               {  
+                  "id":1,
+                  "titulo":"Pontos: 1 - Orientações de enfermagem ao paciente/família sobre auto-cuidado com pronta compreensão e aceitação das informações recebidas.",
+                  "peso":1
+               },
+               {  
+                  "id":2,
+                  "titulo":"Pontos: 2 - Orientações de enfermagem ao paciente/família sobre auto-cuidado com dificuldades de compreensão mas com pronta aceitação das informações recebidas.",
+                  "peso":2
+               },
+               {  
+                  "id":3,
+                  "titulo":"Pontos: 3 - Orientações de enfermagem ao paciente/família sobre auto-cuidado com pronta compreensão mas certa resistência às informações recebidas.",
+                  "peso":3
+               },
+               {  
+                  "id":4,
+                  "titulo":"Pontos: 4 - Orientações de enfermagem ao paciente/família sobre auto-cuidado com pronta compreensão mas elevada resistência às informações recebidas.",
+                  "peso":4
+               },
+               {  
+                  "id":5,
+                  "titulo":"Pontos: 5 - Orientações de enfermagem ao paciente/família sobre auto-cuidado com pronta compreensão mas sem aceitação das informações recebidas.",
+                  "peso":5
+               }
+            ]
+         },
+         {  
+            "id":11,
+            "pergunta":"Comportamento",
+            "descricao":"Sentimentos, pensamentos e condutas do paciente com relação à sua doença, gerados em sua interação com o processo de hospitalização, a equipe de saúde e/ou família. Para preencher o indicador abaixo observe as conceituações : ANSIEDADE - 'vago sentimento de catástrofe iminente, apreensão ou sensação de pavor' (TAYLOR,1992). SINTOMAS DE ANSIEDADE - alteração da respiração, tremores, sudorese, taquicardia, náusea, vômito, vertigem, anorexia, diarréia, inquietação, perturbação do sono, medo excessivo ou irracional, sensações de falta de ar ou sufocamento, parestesias, tensão muscular (DSM-IV,1995). RETRAIMENTO SOCIAL - tendência ocasional para evitar contatos sociais ; funcionamento social diminuído. IRRITABILIDADE - 'Irritação : estado relativamente moderado de cólera, expressando-se sobretudo em formas verbais' ( CABRAL;NICK,1979). Ex: exasperação, exaltação. RETRAIMENTO SOCIAL AUMENTADO - tendência freqüente para evitar contatos sociais. APATIA -'aparente insensibilidade a tudo o que provoca habitualmente no indivíduo um sentimento ou uma emoção' (FILLIOUD et al, 1981), indiferença. Ex: não manifestação de amor, ódio, alegria, tristeza, medo, raiva. PASSIVIDADE - 'é uma predisposição para sofrer sem iniciativa nem esforço todas as influências exteriores' (FILLIOUD et al, 1981). Ex: Não reação diante de procedimentos de enfermagem., condutas médicas, hospitalização. DESESPERANÇA - 'estado subjetivo em que o indivíduo vê escolhas pessoais disponíveis limitadas, ou sem alternativas, e está incapaz de mobilizar energia em seu próprio favor' (NANDA, 1986). Ex: ausência ou diminuição de expectativas, projetos e planos de vida. IMPOTÊNCIA PSÍQUICA - 'percepção de que uma pessoa tem de que o que ela pode fazer não altera, significativamente, um resultado ... ' (NANDA, 1982). Ex:demonstração de incapacidade para desempenhar atividades cotidianas ( não sei', 'não vou conseguir','não posso'). AMBIVALÊNCIA DE SENTIMENTOS - 'coexistência de dois impulsos, desejos, atitudes ou emoções opostos dirigidos para. a mesma pessoa, o mesmo objeto ou o mesmo objetivo ...' (DICIONÁRIO Médico Blakiston, 1982). Ex:afirmação/negação, aceitação/rejeição, amor/ódio, alegria/tristeza. ISOLAMENTO SOCIAL - 'provação de contatos sociais ...' (CABRAL; NICK, 1979).",
+            "opcoes":[  
+               {  
+                  "id":1,
+                  "titulo":"Pontos: 1 - Calmo, tranqüilo; preocupações cotidianas.",
+                  "peso":1
+               },
+               {  
+                  "id":2,
+                  "titulo":"Pontos: 2 - Alguns sintomas de ansiedade (até 3) ou queixas e solicitações contínuas ou retraimento social.",
+                  "peso":2
+               },
+               {  
+                  "id":3,
+                  "titulo":"Pontos: 3 - Irritabilidade excessiva ou retraimento social aumentado ou apatia ou passividade ou queixas excessivas.",
+                  "peso":3
+               },
+               {  
+                  "id":4,
+                  "titulo":"Pontos: 4 - Sentimento de desesperança ou impotência psíquica ou ambivalência de sentimentos ou acentuada diminuição do interesse por atividades ou aumento da freqüência de sintomas de ansiedade (mais de 3 sintomas).",
+                  "peso":4
+               },
+               {  
+                  "id":5,
+                  "titulo":"Pontos: 5 - Comportamento destrutivo dirigido a si mesmo e aos outros ou recusa de cuidados de atenção à saúde ou verbalizações hostis e ameaçadoras ou completo isolamento social.",
+                  "peso":5
+               }
+            ]
+         },
+         {  
+            "id":12,
+            "pergunta":"Comunicação",
+            "descricao":"Habilidade em usar ou entender a linguagem verbal e não verbal na interação humana.",
+            "opcoes":[  
+               {  
+                  "id":1,
+                  "titulo":"Pontos: 1 - Comunicativo, expressa idéias com clareza e lógica.",
+                  "peso":1
+               },
+               {  
+                  "id":2,
+                  "titulo":"Pontos: 2 - Dificuldade em se expressar por diferenças sócio-culturais; verbalização inapropriada.",
+                  "peso":2
+               },
+               {  
+                  "id":3,
+                  "titulo":"Pontos: 3 - Recusa-se a falar; choroso; comunicação não verbal.",
+                  "peso":3
+               },
+               {  
+                  "id":4,
+                  "titulo":"Pontos: 4 - Dificuldade em se comunicar por distúrbios de linguagem (afasia, disfasia, disartria) ou sensibilidade dolorosa ao falar ou por barreira física (traqueostomia, entubação) ou deficiência física ou mental.",
+                  "peso":4
+               },
+               {  
+                  "id":5,
+                  "titulo":"Pontos: 5 - Inapto para comunicar necessidades.",
+                  "peso":5
+               }
+            ]
+         },
+         {  
+            "id":13,
+            "pergunta":"Integridade Cutâneo-Mucosa",
+            "descricao":"Manutenção da pele e mucosas sem danificação ou destruição.",
+            "opcoes":[  
+               {  
+                  "id":1,
+                  "titulo":"Pontos: 1 - Pele íntegra e sem alteração de cor em todas as 80s do corpo.",
+                  "peso":1
+               },
+               {  
+                  "id":2,
+                  "titulo":"Pontos: 2 - Presença de alteração da cor da pele (equimose, hiperemia ou outras) em uma ou mais Áreas do corpo sem solução de continuidade.",
+                  "peso":2
+               },
+               {  
+                  "id":3,
+                  "titulo":"Pontos: 3 - Presença de solução de continuidade em uma ou mais Áreas do corpo sem presença de exsudato purulento.",
+                  "peso":3
+               },
+               {  
+                  "id":4,
+                  "titulo":"Pontos: 4 - Presença de solução de continuidade em uma ou mais Áreas do corpo com presença de exsudato purulento, sem exposição de tecido muscular e/ou ósseo; ausência de Áreas de necrose.",
+                  "peso":4
+               },
+               {  
+                  "id":5,
+                  "titulo":"Pontos: 5 - Presença de solução de continuidade em uma ou mais Áreas do corpo com presença de exsudato purulento, exposição de tecido muscular e/ou ósseo ; presença de Áreas de necrose.",
+                  "peso":5
+               }
+            ]
+         }
+      ],
+      "analise":[  
+         {  
+            "id":1,
+            "valorMin":13,
+            "valorMax":26,
+            "analise":"Cuidados mínimos"
+         },
+         {  
+            "id":2,
+            "valorMin":27,
+            "valorMax":39,
+            "analise":"Cuidados intermediários"
+         },
+         {  
+            "id":3,
+            "valorMin":40,
+            "valorMax":52,
+            "analise":"Cuidados Intensivos"
+         },
+         {  
+            "id":4,
+            "valorMin":53,
+            "valorMax":65,
+            "analise":"Cuidados Semi Intensivos"
+         }
+      ]
+   },
+   {  
+      "id":7,
+      "nome":"Escala de Ramsay",
+      "tipo":"I",
+      "descricao":"Escala subjetiva utilizada para avaliar o grau de sedação em pacientes.",
+      "perguntas":[  
+         {  
+            "id":1,
+            "pergunta":"Estado Mental e Nível de Consciência",
+            "descricao":"Habilidade em manter a percepção e as atividades cognitivas.",
+            "opcoes":[  
+               {  
+                  "id":1,
+                  "titulo":"Pontos: 1 - Acordado; interpretação precisa de ambiente e tempo; executa, sempre, corretamente, ordens verbalizadas; preservação da memória.",
+                  "peso":1
+               },
+               {  
+                  "id":2,
+                  "titulo":"Pontos: 2 - Acordado; interpretação precisa de ambiente e tempo; segue instruções corretamente apenas algumas vezes; dificuldade de memória.",
+                  "peso":2
+               }
+            ]
+         }
+      ],
+      "analise":[  
+         {  
+            "id":1,
+            "valorMin":1,
+            "valorMax":999,
+            "analise":"PDF"
+         }
+      ]
+   },
+   {  
+      "id":8,
+      "nome":"Escala de DINI",
+      "tipo":"N",
+      "descricao":"Sistema de classificação de pacientes pediátricos DINI.",
+      "perguntas":[  
+         {  
+            "id":1,
+            "pergunta":"Atividade",
+            "descricao":"Possibilidade de manutenção de atividades compatíveis com a idade de desenvolvimento, exercitando as habilidades pertinentes a cada idade e interagindo com acompanhante, equipe ou com outras crianças para sorrir, brincar, conversar, etc.",
+            "opcoes":[  
+               {  
+                  "id":1,
+                  "titulo":"Pontos: 1 - Desenvolvimento de atividades compatíveis com a faixa etária.",
+                  "peso":1
+               },
+               {  
+                  "id":2,
+                  "titulo":"Pontos: 2 - Sonolento.",
+                  "peso":2
+               },
+               {  
+                  "id":3,
+                  "titulo":"Pontos: 3 - Hipoativo ou Hiperativo ou Déficit no desenvolvimento.",
+                  "peso":3
+               },
+               {  
+                  "id":4,
+                  "titulo":"Pontos: 4 - Inconsciente ou sedado ou coma vigil.",
+                  "peso":4
+               }
+            ]
+         },
+         {  
+            "id":2,
+            "pergunta":"Intervalo de aferição de controles",
+            "descricao":"Necessidade de observação e controle de dados como sinais vitais, pressão venosa central, glicemia capilar, balanço hídrico.",
+            "opcoes":[  
+               {  
+                  "id":1,
+                  "titulo":"Pontos: 1 - 6/6 horas.",
+                  "peso":1
+               },
+               {  
+                  "id":2,
+                  "titulo":"Pontos: 2 - 4/4 horas.",
+                  "peso":2
+               },
+               {  
+                  "id":3,
+                  "titulo":"Pontos: 3 - 2/2 horas.",
+                  "peso":3
+               },
+               {  
+                  "id":4,
+                  "titulo":"Pontos: 4 - Intervalo menor 2 horas.",
+                  "peso":4
+               }
+            ]
+         },
+         {  
+            "id":3,
+            "pergunta":"Oxigenação",
+            "descricao":"Capacidade da criança ou adolescente manter a permeabilidade de vias aéreas, ventilação e oxigenação normais.",
+            "opcoes":[  
+               {  
+                  "id":1,
+                  "titulo":"Pontos: 1 - Respiração espontânea, sem necessidade de oxigenoterapia ou de desobstrução de vias aéreas.",
+                  "peso":1
+               },
+               {  
+                  "id":2,
+                  "titulo":"Pontos: 2 - Respiração espontânea com necessidade de desobstrução de vias aéreas por instilação de soro.",
+                  "peso":2
+               },
+               {  
+                  "id":3,
+                  "titulo":"Pontos: 3 - Respiração espontânea com necessidade de desobstrução de vias aéreas por aspiração de secreções e/ou necessidade de oxigenoterapia.",
+                  "peso":3
+               },
+               {  
+                  "id":4,
+                  "titulo":"Pontos: 4 - Ventilação Mecânica (Não Invasiva ou Invasiva).",
+                  "peso":4
+               }
+            ]
+         },
+         {  
+            "id":4,
+            "pergunta":"Terapêutica Medicamentosa",
+            "descricao":"Necessidade da criança ou adolescente receber medicações prescritas.",
+            "opcoes":[  
+               {  
+                  "id":1,
+                  "titulo":"Pontos: 1 - Não necessita de medicamentos.",
+                  "peso":1
+               },
+               {  
+                  "id":2,
+                  "titulo":"Pontos: 2 - Necessidades de medicamentos por via tópica, inalatória, ocular e/ou oral.",
+                  "peso":2
+               },
+               {  
+                  "id":3,
+                  "titulo":"Pontos: 3 - Necessidades de medicamentos por sondas ou via parenteral (subcutânea, intramuscular ou intravenoso).",
+                  "peso":3
+               },
+               {  
+                  "id":4,
+                  "titulo":"Pontos: 4 - Uso de fármacos vasoativos e/ou hemoderivados e/ou quimioterápicos.",
+                  "peso":4
+               }
+            ]
+         },
+         {  
+            "id":5,
+            "pergunta":"Integridade Cutâneo Mucosa",
+            "descricao":"Necessidade de manutenção ou restauração da integridade cutâneomucosa.",
+            "opcoes":[  
+               {  
+                  "id":1,
+                  "titulo":"Pontos: 1 - Pele íntegra sem alteração da cor em toda a área corpórea.",
+                  "peso":1
+               },
+               {  
+                  "id":2,
+                  "titulo":"Pontos: 2 - Necessidade de curativo superficial, de pequeno porte.",
+                  "peso":2
+               },
+               {  
+                  "id":3,
+                  "titulo":"Pontos: 3 - Presença de hiperemia (pontos de pressão ou períneo) ou sinais flogísticos em qualquer local da superfície corpórea que necessite de curativo de médio porte.",
+                  "peso":3
+               },
+               {  
+                  "id":4,
+                  "titulo":"Pontos: 4 - Presença de lesão com deiscência ou secreção com necessidade de curativo de grande porte.",
+                  "peso":4
+               }
+            ]
+         },
+         {  
+            "id":6,
+            "pergunta":"Alimentação e Hidratação",
+            "descricao":"Capacidade da criança ou adolescente ingerir alimentos sozinho, com auxílio, por sondas ou via parenteral.",
+            "opcoes":[  
+               {  
+                  "id":1,
+                  "titulo":"Pontos: 1 - Via oral de forma independente ou seio materno exclusivo.",
+                  "peso":1
+               },
+               {  
+                  "id":2,
+                  "titulo":"Pontos: 2 - Via oral com auxílio e paciente colaborativo.",
+                  "peso":2
+               },
+               {  
+                  "id":3,
+                  "titulo":"Pontos: 3 - Sondas (gástrica, enteral ou gastrostomia).",
+                  "peso":3
+               },
+               {  
+                  "id":4,
+                  "titulo":"Pontos: 4 - Nutrição parenteral ou via oral com paciente apresentando dificuldade de deglutição ou risco para aspiração.",
+                  "peso":4
+               }
+            ]
+         },
+         {  
+            "id":7,
+            "pergunta":"Eliminação",
+            "descricao":"Capacidade da criança ou adolescente apresentar eliminações urinária e intestinal sozinha, e/ou necessidade de uso de sondas.",
+            "opcoes":[  
+               {  
+                  "id":1,
+                  "titulo":"Pontos: 1 - Vaso sanitário sem auxílio.",
+                  "peso":1
+               },
+               {  
+                  "id":2,
+                  "titulo":"Pontos: 2 - Vaso sanitário com auxílio.",
+                  "peso":2
+               },
+               {  
+                  "id":3,
+                  "titulo":"Pontos: 3 - Fraldas (necessidade de um profissional para a troca) ou sonda vesical de demora.",
+                  "peso":3
+               },
+               {  
+                  "id":4,
+                  "titulo":"Pontos: 4 - Sonda vesical de alívio ou estomas ou uso de comadre ou urinol ou fraldas (necessidade de dois profissionais para a troca).",
+                  "peso":4
+               }
+            ]
+         },
+         {  
+            "id":8,
+            "pergunta":"Higiene Corporal",
+            "descricao":"Capacidade da criança ou adolescente realizar, necessitar de auxílio ou depender totalmente para a higiene corporal.",
+            "opcoes":[  
+               {  
+                  "id":1,
+                  "titulo":"Pontos: 1 - Banho de aspersão sem auxílio.",
+                  "peso":1
+               },
+               {  
+                  "id":2,
+                  "titulo":"Pontos: 2 - Banho de aspersão com auxílio.",
+                  "peso":2
+               },
+               {  
+                  "id":3,
+                  "titulo":"Pontos: 3 - Banho de imersão ou banho em cadeira.",
+                  "peso":3
+               },
+               {  
+                  "id":4,
+                  "titulo":"Pontos: 4 - Banho no leito ou na incubadora ou necessidade de mais de um profissional da enfermagem para a realização de qualquer banho.",
+                  "peso":4
+               }
+            ]
+         },
+         {  
+            "id":9,
+            "pergunta":"Mobilidade e Deambulação",
+            "descricao":"Capacidade da criança ou adolescente de mobilizar voluntariamente o corpo ou seguimentos corporais.",
+            "opcoes":[  
+               {  
+                  "id":1,
+                  "titulo":"Pontos: 1 - Deambulação sem auxílio.",
+                  "peso":1
+               },
+               {  
+                  "id":2,
+                  "titulo":"Pontos: 2 - Repouso no leito mobiliza-se sem auxílio.",
+                  "peso":2
+               },
+               {  
+                  "id":3,
+                  "titulo":"Pontos: 3 - Repouso no leito, mobiliza-se com auxílio ou deambula com auxílio.",
+                  "peso":3
+               },
+               {  
+                  "id":4,
+                  "titulo":"Pontos: 4 - Restrito no leito, totalmente dependente para mudança de decúbito.",
+                  "peso":4
+               }
+            ]
+         },
+         {  
+            "id":10,
+            "pergunta":"Participação do acompanhante",
+            "descricao":"Desempenho do acompanhante para realizar cuidados e atender necessidades da criança ou adolescente.",
+            "opcoes":[  
+               {  
+                  "id":1,
+                  "titulo":"Pontos: 1 - Acompanhante reconhece as necessidades físicas e emocionais do paciente pediátrico e consegue atendê-las.",
+                  "peso":1
+               },
+               {  
+                  "id":2,
+                  "titulo":"Pontos: 2 - Acompanhante buscando informações para atender necessidades físicas e emocionais do paciente pediátrico.",
+                  "peso":2
+               },
+               {  
+                  "id":3,
+                  "titulo":"Pontos: 3 - Acompanhante tem dificuldade em reconhecer algumas necessidades físicas e emocionais do paciente pediátrico, e é resistente a buscar auxílio e a mudanças.",
+                  "peso":3
+               },
+               {  
+                  "id":4,
+                  "titulo":"Pontos: 4 - Acompanhante parece não estar atento nem se interessar quanto às necessidades físicas e emocionais do paciente pediátrico e/ou desacompanhado.",
+                  "peso":4
+               }
+            ]
+         }
+      ],
+      "analise":[  
+         {  
+            "id":1,
+            "valorMin":11,
+            "valorMax":17,
+            "analise":"Cuidados mínimos"
+         },
+         {  
+            "id":2,
+            "valorMin":18,
+            "valorMax":23,
+            "analise":"Cuidados intermediários"
+         },
+         {  
+            "id":3,
+            "valorMin":24,
+            "valorMax":30,
+            "analise":"Alta dependência"
+         },
+         {  
+            "id":4,
+            "valorMin":31,
+            "valorMax":36,
+            "analise":"Cuidados Semi Intensivos"
+         },
+         {  
+            "id":5,
+            "valorMin":37,
+            "valorMax":44,
+            "analise":"Cuidados intensivos"
+         }
+      ]
+   },
+   {  
+      "id":9,
+      "nome":"Escala de Glasgow",
+      "tipo":"N",
+      "descricao":"Escala de coma de Glasgow.",
+      "perguntas":[  
+         {  
+            "id":1,
+            "pergunta":"Abertura Ocular",
+            "descricao":"Abertura Ocular.",
+            "opcoes":[  
+               {  
+                  "id":1,
+                  "titulo":"Pontos: 1 - Não abre os olhos.",
+                  "peso":1
+               },
+               {  
+                  "id":2,
+                  "titulo":"Pontos: 2 - Abre os olhos em resposta a estímulo de dor.",
+                  "peso":2
+               },
+               {  
+                  "id":3,
+                  "titulo":"Pontos: 3 - Abre os olhos em resposta a um chamado.",
+                  "peso":3
+               },
+               {  
+                  "id":4,
+                  "titulo":"Pontos: 4 - Abre os olhos espontaneamente.",
+                  "peso":4
+               }
+            ]
+         },
+         {  
+            "id":2,
+            "pergunta":"Resposta Verbal",
+            "descricao":"Resposta Verbal.",
+            "opcoes":[  
+               {  
+                  "id":1,
+                  "titulo":"Pontos: 1 - Emudecido.",
+                  "peso":1
+               },
+               {  
+                  "id":2,
+                  "titulo":"Pontos: 2 - Emite sons incompreensíveis.",
+                  "peso":2
+               },
+               {  
+                  "id":3,
+                  "titulo":"Pontos: 3 - Pronuncia palavras desconexas.",
+                  "peso":3
+               },
+               {  
+                  "id":4,
+                  "titulo":"Pontos: 4 - Confuso, desorientado.",
+                  "peso":4
+               },
+               {  
+                  "id":5,
+                  "titulo":"Pontos: 5 - Orientado, conversa normalmente.",
+                  "peso":5
+               }
+            ]
+         },
+         {  
+            "id":3,
+            "pergunta":"Resposta Motora",
+            "descricao":"Resposta Motora.",
+            "opcoes":[  
+               {  
+                  "id":1,
+                  "titulo":"Pontos: 1 - Não se movimenta.",
+                  "peso":1
+               },
+               {  
+                  "id":2,
+                  "titulo":"Pontos: 2 - Extensão a estímulos dolorosos (descerebração).",
+                  "peso":2
+               },
+               {  
+                  "id":3,
+                  "titulo":"Pontos: 3 - Flexão anormal a estímulos dolorosos (decorticação).",
+                  "peso":3
+               },
+               {  
+                  "id":4,
+                  "titulo":"Pontos: 4 - Flexão inespecífica (normal)/ Reflexo de retirada a estímulos dolorosos.",
+                  "peso":4
+               },
+               {  
+                  "id":5,
+                  "titulo":"Pontos: 5 - Localiza estímulos dolorosos.",
+                  "peso":5
+               },
+               {  
+                  "id":6,
+                  "titulo":"Pontos: 6 - Obedece a comandos.",
+                  "peso":6
+               }
+            ]
+         }
+      ],
+      "analise":[  
+         {  
+            "id":1,
+            "valorMin":3,
+            "valorMax":6,
+            "analise":"Coma profundo."
+         },
+         {  
+            "id":2,
+            "valorMin":7,
+            "valorMax":10,
+            "analise":"Coma intermediário."
+         },
+         {  
+            "id":3,
+            "valorMin":11,
+            "valorMax":14,
+            "analise":"Coma superficial."
+         }
+          {
+             "id":4,
+             "valorMin":15,
+             "valorMax":15,
+             "analise":"Normal"
+          }
+      ]
+   }
+]

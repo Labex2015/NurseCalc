@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.nursecalc.Panel" >
+    <item android:id="@+id/action_configuraEscala"
+        android:title="@string/action_example"
+        android:icon="@drawable/configapp"
+        android:showAsAction="collapseActionView|always" />
+    <item android:id="@+id/action_settings"
+        android:title="@string/action_settings"
+        android:orderInCategory="100"
+        android:showAsAction="never" />
+</menu>
+<!-- From: file:/C:/Users/0126128/Desktop/Labex%202015/NurseCalc/app/src/main/res/menu/panel.xml -->

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.nursecalc.Util.DashboardLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:src="@drawable/gotejamento"
+                android:id="@+id/buttonCalcularGotejamento"
+                android:background="#fff"
+                android:onClick="calcularGotejamento"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Gotejamento"
+                android:id="@+id/gotejamentoTextView"
+                android:paddingTop="40dp"
+                android:textAppearance="@android:style/TextAppearance.Large"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/fakeDosagemButton"
+                android:layout_gravity="center_vertical" />
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:src="@drawable/dosagem"
+                android:background="#fff"
+                android:id="@+id/buttonDosagem"
+                android:onClick="calcularDosagem"
+                android:layout_height="wrap_content" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Dosagem"
+                android:paddingTop="40dp"
+                android:textAppearance="@android:style/TextAppearance.Large"
+                android:layout_height="wrap_content" />
+
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:src="@drawable/escala"
+                android:background="#fff"
+                android:id="@+id/buttonEscalas"
+                android:onClick="showEscalas"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Escala"
+                android:paddingTop="40dp"
+                android:textAppearance="@android:style/TextAppearance.Large"
+                android:layout_height="wrap_content" />
+
+
+
+
+</com.nursecalc.Util.DashboardLayout>

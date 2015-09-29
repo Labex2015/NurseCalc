@@ -1,0 +1,9 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.nursecalc.CalcularGotejamento" >
+    <item android:id="@+id/action_definir_medida"
+        android:title="@string/definir_medida"
+        android:icon="@drawable/configapp"
+        android:orderInCategory="100"
+        android:showAsAction="collapseActionView|always" />
+</menu>

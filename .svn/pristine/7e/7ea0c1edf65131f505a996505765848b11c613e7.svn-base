@@ -1,0 +1,136 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="fill_parent"
+       >
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="1 gota equivale a 3 microgotas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:id="@+id/escalas" />
+
+            <TextView
+                android:text="1 ml equivale a 20 gotas e 60 microgotas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:id="@+id/escalasMl" />
+
+            <TextView
+                android:text="1 hora é igual a 60 minutos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:id="@+id/escalasHoras" />
+
+            <TextView
+                android:text="ml/h = mcgt/min"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:id="@+id/mcgtmin" />
+         </LinearLayout>
+
+
+
+        <TextView
+            android:text="Calcule agora o gotejamento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/label" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Volume (ml)"
+            android:layout_marginTop="20dp"
+            android:id="@+id/labelUnidadeVolumeLayout"
+
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:id="@+id/volume"
+            android:layout_below="@+id/textView"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:padding="20dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Tempo (horas)"
+            android:id="@+id/labelUnidadeTempoLayout"
+            android:layout_below="@+id/volume"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:id="@+id/tempo"
+            android:layout_below="@+id/textView3"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+        <TextView
+            android:padding="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Resultado:"
+            android:id="@+id/resultado"
+            android:layout_above="@+id/button"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Calcular gotejamento"
+            android:layout_gravity="bottom"
+            android:id="@+id/button"
+            android:onClick="calcular"
+         />
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Calcular Microgota"
+            android:layout_gravity="bottom"
+            android:id="@+id/buttonMicroGota"
+            android:onClick="calcularMicroGota"
+            />
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Ver a fórmula"
+            android:onClick="verFormula"
+            android:layout_gravity="bottom"
+            android:id="@+id/verformula"
+             />
+
+
+
+    </LinearLayout>
+</ScrollView><!-- From: file:/C:/Users/0126128/Desktop/Labex%202015/NurseCalc/app/src/main/res/layout/activity_calcular_gotejamento.xml -->

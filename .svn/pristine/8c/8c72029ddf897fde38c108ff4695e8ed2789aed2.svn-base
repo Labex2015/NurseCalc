@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.nursecalc"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="20" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.nursecalc.Splash"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.nursecalc.Panel"
+            android:label="@string/title_activity_panel" >
+        </activity>
+        <activity
+            android:name="com.nursecalc.Creditos"
+            android:label="Créditos" >
+        </activity>
+        <activity
+            android:name="com.nursecalc.Escalas"
+            android:label="@string/title_activity_escalas" >
+        </activity>
+        <activity
+            android:name="com.nursecalc.CalcularGotejamento"
+            android:label="@string/title_activity_calcular_gotejamento" >
+        </activity>
+        <activity
+            android:name="com.nursecalc.CalcularDosagem"
+            android:label="Calcular dosagem" >
+        </activity>
+        <activity
+            android:name="com.nursecalc.Formula"
+            android:label="@string/title_activity_calcular_gotejamento" >
+        </activity>
+        <activity
+            android:name="com.nursecalc.LeXml"
+            android:label="Escalas" >
+        </activity>
+        <activity
+            android:name="com.nursecalc.EscalaActivity"
+            android:label="@string/title_activity_escala"
+            android:screenOrientation="portrait" >
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\0126128\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\20.0.0\support-annotations-20.0.0.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="9d9013e9ff35fc3756411e62873c363c70c638fa">
+        <dex dex="C:\Users\0126128\Desktop\Labex 2015\NurseCalc\app\build\intermediates\pre-dexed\debug\support-annotations-20.0.0-bc814bcbe1e789cbd533079303977f3e6e7e342d.jar" />
+    </item>
+    <item
+        jar="C:\Users\0126128\Desktop\Labex 2015\NurseCalc\app\libs\json-simple-1.1.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="5e303a03d04e6788dddfa3655272580ae0fc13bb">
+        <dex dex="C:\Users\0126128\Desktop\Labex 2015\NurseCalc\app\build\intermediates\pre-dexed\debug\json-simple-1.1-ae892a6d12fa61e7a67957479adcff59c8d855f2.jar" />
+    </item>
+    <item
+        jar="C:\Users\0126128\Desktop\Labex 2015\NurseCalc\app\libs\gson-2.2.4.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="973e832af433b44c3ed11c426f2f390b29f3f3f8">
+        <dex dex="C:\Users\0126128\Desktop\Labex 2015\NurseCalc\app\build\intermediates\pre-dexed\debug\gson-2.2.4-dc508554d4aab7a4c9a810f92fee45c638fadef0.jar" />
+    </item>
+    <item
+        jar="C:\Users\0126128\Desktop\Labex 2015\NurseCalc\app\build\intermediates\exploded-aar\com.android.support\support-v4\20.0.0\libs\internal_impl-20.0.0.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="e40b3078e3fbd353c9f44da8df25a8fc0078209d">
+        <dex dex="C:\Users\0126128\Desktop\Labex 2015\NurseCalc\app\build\intermediates\pre-dexed\debug\internal_impl-20.0.0-6bf729e624c3e6bab7de98400351d47ad567d277.jar" />
+    </item>
+    <item
+        jar="C:\Users\0126128\Desktop\Labex 2015\NurseCalc\app\build\intermediates\exploded-aar\com.android.support\support-v4\20.0.0\classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="8694693636ab36910c8100ce527c258ff3ebece0">
+        <dex dex="C:\Users\0126128\Desktop\Labex 2015\NurseCalc\app\build\intermediates\pre-dexed\debug\classes-2f2c6f54324167ae6003dcdf61f4e3b5ad9bd96c.jar" />
+    </item>
+
+</items>

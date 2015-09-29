@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="red">#FF0000</color>
+    <color name="blue_desable">#7625a7e4</color>
+    <color name="blue">#218fc6</color>
+    <color name="blue_press">#ff2ea9c6</color>
+    <color name="white">#FFFFFF</color>
+    <color name="action_bar">#66CCFF</color>
+    <color name="gray">#ebebeb</color>
+</resources>
